@@ -32,21 +32,22 @@ void  Quick_Sort(vector<int> &arr,int low,int high){
         Quick_Sort(arr,pindex+1,high);      
     }
 }
-
 int main() {
     int n;
+    cout<<"Enter Number Of Elements in The Array:"<<endl;
     cin>>n;
     vector<int> arr(n);
+    cout<<"Enter Elements of The Array:"<<endl;
     for (int i = 0; i < n; i++)
     {
         cin>>arr[i];
     }
     Quick_Sort(arr,0,n-1);
+    cout<<"Sorted Array:"<<endl;
     for (int i = 0; i < n; i++)
     {
         cout<<arr[i]<< " ";
     }
     cout<<endl; 
-
     return 0;
 }

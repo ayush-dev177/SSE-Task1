@@ -16,10 +16,21 @@ break;}
 }
 }
 int main() {
-vector<int> arr= {13,4,5,3,7,9,12};
-bubblesort(arr);
-cout << "Sorted array: \n";
-for (int num : arr){
- cout << " " << num ;}  
-return 0;
+int n;
+    cout<<"Enter Number Of Elements in The Array:"<<endl;
+    cin>>n;
+    vector<int> arr(n);
+    cout<<"Enter Elements of The Array:"<<endl;
+    for (int i = 0; i < n; i++)
+    {
+        cin>>arr[i];
+    }
+    bubblesort(arr);
+     cout<<"Sorted Array:"<<endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout<<arr[i]<< " ";
+    }
+    cout<<endl; 
+    return 0;
 }
